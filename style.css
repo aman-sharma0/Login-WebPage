@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(./images/wallpaperflare.com_wallpaper.jpg); 
+  backdrop-filter: blur(8px);
+}
+
+section {
+  position: relative;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(243, 243, 243, 0.7);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #e0f3ed;
+  text-align: center;
+}
+span {
+  font-size: 1rem;
+  margin: 20px;
+  color: #dad3d3;
+  display: block;
+  text-align: center;
+}
+.inputbox {
+  position: relative;
+  margin: 30px;
+  max-width: 310px;
+  border-bottom: 1px solid #e0f3ed;
+}
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #e0f3ed;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.inputbox input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: white;
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e0f3ed;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+button:hover{
+    background-color: rgb(47, 124, 201);
+    color: white;
+}
+
+
+.forget {
+  margin: 35px 0;
+  font-size: 0.9rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.forget label input {
+  margin-right: 3px;
+  zoom: 1.4;
+  vertical-align: sub;
+}
+
+
+.Login_google a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    outline: none;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .google-icon{
+    width: 2rem;
+    height: 1.5rem;
+    padding: 1.5px;
+  }
+
+  .Login_google a:hover{
+      background-color: rgb(47, 124, 201);
+      color: white;
+  }
